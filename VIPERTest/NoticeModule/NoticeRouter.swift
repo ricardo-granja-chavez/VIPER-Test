@@ -10,12 +10,10 @@ import UIKit
 
 class NoticeRouter: PresenterToRouterProtocol {
     
-    static var mainstoryboard: UIStoryboard {
-        return UIStoryboard(name: "Main",bundle: Bundle.main)
-    }
+    static var storyboard: UIStoryboard { UIStoryboard(name: "Main", bundle: .main) }
     
     static func createModule() -> NoticeViewController {
-        let view = mainstoryboard.instantiateViewController(withIdentifier: "NoticeViewController") as! NoticeViewController
+        let view = storyboard.instantiateViewController(withIdentifier: "NoticeViewController") as! NoticeViewController
         let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = NoticePresenter()
         let interactor: PresenterToInteractorProtocol = NoticeInteractor()
         let router: PresenterToRouterProtocol = NoticeRouter()
@@ -30,9 +28,9 @@ class NoticeRouter: PresenterToRouterProtocol {
         
     }
     
-    func pushToMovieScreen(navigationConroller navigationController:UINavigationController) {
-//        let movieModue = MovieRouter.createMovieModule()
-//        navigationController.pushViewController(movieModue,animated: true)
+    func pushToMovieScreen(navigationConroller navigationController: UINavigationController) {
+        let movieModule = MovieRouter.createMovieModule()
+        navigationController.pushViewController(movieModule, animated: true)
     }
     
 }
