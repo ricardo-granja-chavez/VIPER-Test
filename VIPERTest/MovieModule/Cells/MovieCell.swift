@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import Alamofire
-import AlamofireImage
 
 class MovieCell: UITableViewCell {
     
@@ -24,16 +22,20 @@ class MovieCell: UITableViewCell {
     func configure(movie: MovieModel) {
         guard let title = movie.title,
               let brief = movie.brief,
-              let imageUrl = movie.imageUrl else { return }
+              let imageUrl = movie.imageUrl,
+              let url = URL(string: imageUrl) else { return }
         
         self.titleLabel.text = title
         self.briefLabel.text = brief
         
-        Alamofire.request(imageUrl).responseData { (response) in
-            if response.error == nil {
-                if let data = response.data {
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if error == nil {
+                if let data = data {
                     self.pictureImageView.image = UIImage(data: data)
                 }
+            } else {
+                debugPrint("No se pudo cargar imagen: \(imageUrl)")
             }
         }
     }
