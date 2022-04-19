@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3B3E95280E11BA00938516 /* NoticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3B3E94280E11BA00938516 /* NoticeModel.swift */; };
+		1D3B3E95280E11BA00938516 /* NoticeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3B3E94280E11BA00938516 /* NoticeEntity.swift */; };
 		1D3B3E97280E12FC00938516 /* NoticeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3B3E96280E12FC00938516 /* NoticeProtocols.swift */; };
 		1D3B3E99280E147800938516 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3B3E98280E147800938516 /* AppConstants.swift */; };
 		1D3B3E9B280E169E00938516 /* NoticePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3B3E9A280E169E00938516 /* NoticePresenter.swift */; };
@@ -20,11 +20,19 @@
 		1DB2B396280E0DF000BBB9F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB2B394280E0DF000BBB9F8 /* LaunchScreen.storyboard */; };
 		1DD9BF94280E28A700CA2F6F /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9BF92280E28A700CA2F6F /* NoticeCell.swift */; };
 		1DD9BF95280E28A700CA2F6F /* NoticeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9BF93280E28A700CA2F6F /* NoticeCell.xib */; };
+		1DD9BF98280F1A3100CA2F6F /* MovieProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9BF97280F1A3100CA2F6F /* MovieProtocol.swift */; };
+		1DD9BF9A280F1AE100CA2F6F /* MovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9BF99280F1AE100CA2F6F /* MovieEntity.swift */; };
+		1DD9BF9C280F1C5C00CA2F6F /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9BF9B280F1C5C00CA2F6F /* MovieViewController.swift */; };
+		1DD9BF9E280F1CE900CA2F6F /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9BF9D280F1CE900CA2F6F /* MovieInteractor.swift */; };
+		1DD9BFA0280F1E2300CA2F6F /* MovieRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9BF9F280F1E2300CA2F6F /* MovieRouter.swift */; };
+		1DD9BFA4280F1F6E00CA2F6F /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9BFA2280F1F6E00CA2F6F /* MovieCell.swift */; };
+		1DD9BFA5280F1F6E00CA2F6F /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9BFA3280F1F6E00CA2F6F /* MovieCell.xib */; };
+		1DD9BFA7280F260F00CA2F6F /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9BFA6280F260F00CA2F6F /* MoviePresenter.swift */; };
 		84972E1C181E3015786FC6E0 /* Pods_VIPERTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCDF25E9D5F3906F042CF1A /* Pods_VIPERTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D3B3E94280E11BA00938516 /* NoticeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeModel.swift; sourceTree = "<group>"; };
+		1D3B3E94280E11BA00938516 /* NoticeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeEntity.swift; sourceTree = "<group>"; };
 		1D3B3E96280E12FC00938516 /* NoticeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeProtocols.swift; sourceTree = "<group>"; };
 		1D3B3E98280E147800938516 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		1D3B3E9A280E169E00938516 /* NoticePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePresenter.swift; sourceTree = "<group>"; };
@@ -39,6 +47,14 @@
 		1DB2B397280E0DF000BBB9F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DD9BF92280E28A700CA2F6F /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
 		1DD9BF93280E28A700CA2F6F /* NoticeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeCell.xib; sourceTree = "<group>"; };
+		1DD9BF97280F1A3100CA2F6F /* MovieProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieProtocol.swift; sourceTree = "<group>"; };
+		1DD9BF99280F1AE100CA2F6F /* MovieEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntity.swift; sourceTree = "<group>"; };
+		1DD9BF9B280F1C5C00CA2F6F /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		1DD9BF9D280F1CE900CA2F6F /* MovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
+		1DD9BF9F280F1E2300CA2F6F /* MovieRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRouter.swift; sourceTree = "<group>"; };
+		1DD9BFA2280F1F6E00CA2F6F /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		1DD9BFA3280F1F6E00CA2F6F /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		1DD9BFA6280F260F00CA2F6F /* MoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
 		209D993A0C1DE6156BD0B017 /* Pods-VIPERTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERTest.release.xcconfig"; path = "Target Support Files/Pods-VIPERTest/Pods-VIPERTest.release.xcconfig"; sourceTree = "<group>"; };
 		6A8502E0340CC78F42FACFD0 /* Pods-VIPERTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERTest.debug.xcconfig"; path = "Target Support Files/Pods-VIPERTest/Pods-VIPERTest.debug.xcconfig"; sourceTree = "<group>"; };
 		DBCDF25E9D5F3906F042CF1A /* Pods_VIPERTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPERTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,12 +76,12 @@
 			isa = PBXGroup;
 			children = (
 				1DD9BF91280E288300CA2F6F /* Cells */,
-				1D3B3E9C280E189000938516 /* NoticeInteractor.swift */,
-				1D3B3E94280E11BA00938516 /* NoticeModel.swift */,
-				1D3B3E9A280E169E00938516 /* NoticePresenter.swift */,
 				1D3B3E96280E12FC00938516 /* NoticeProtocols.swift */,
-				1D3B3E9E280E1AE900938516 /* NoticeRouter.swift */,
 				1DB2B38D280E0DEE00BBB9F8 /* NoticeViewController.swift */,
+				1D3B3E9C280E189000938516 /* NoticeInteractor.swift */,
+				1D3B3E9A280E169E00938516 /* NoticePresenter.swift */,
+				1D3B3E94280E11BA00938516 /* NoticeEntity.swift */,
+				1D3B3E9E280E1AE900938516 /* NoticeRouter.swift */,
 			);
 			path = NoticeModule;
 			sourceTree = "<group>";
@@ -91,6 +107,7 @@
 		1DB2B388280E0DEE00BBB9F8 /* VIPERTest */ = {
 			isa = PBXGroup;
 			children = (
+				1DD9BF96280F1A1200CA2F6F /* MovieModule */,
 				1D3B3E93280E10EB00938516 /* NoticeModule */,
 				1DB2B389280E0DEE00BBB9F8 /* AppDelegate.swift */,
 				1DB2B38F280E0DEE00BBB9F8 /* Main.storyboard */,
@@ -107,6 +124,29 @@
 			children = (
 				1DD9BF92280E28A700CA2F6F /* NoticeCell.swift */,
 				1DD9BF93280E28A700CA2F6F /* NoticeCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1DD9BF96280F1A1200CA2F6F /* MovieModule */ = {
+			isa = PBXGroup;
+			children = (
+				1DD9BFA1280F1F5600CA2F6F /* Cells */,
+				1DD9BF97280F1A3100CA2F6F /* MovieProtocol.swift */,
+				1DD9BF9B280F1C5C00CA2F6F /* MovieViewController.swift */,
+				1DD9BF9D280F1CE900CA2F6F /* MovieInteractor.swift */,
+				1DD9BFA6280F260F00CA2F6F /* MoviePresenter.swift */,
+				1DD9BF99280F1AE100CA2F6F /* MovieEntity.swift */,
+				1DD9BF9F280F1E2300CA2F6F /* MovieRouter.swift */,
+			);
+			path = MovieModule;
+			sourceTree = "<group>";
+		};
+		1DD9BFA1280F1F5600CA2F6F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1DD9BFA2280F1F6E00CA2F6F /* MovieCell.swift */,
+				1DD9BFA3280F1F6E00CA2F6F /* MovieCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -192,6 +232,7 @@
 				1DD9BF95280E28A700CA2F6F /* NoticeCell.xib in Resources */,
 				1DB2B393280E0DF000BBB9F8 /* Assets.xcassets in Resources */,
 				1DB2B391280E0DEE00BBB9F8 /* Main.storyboard in Resources */,
+				1DD9BFA5280F1F6E00CA2F6F /* MovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,15 +285,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD9BF98280F1A3100CA2F6F /* MovieProtocol.swift in Sources */,
 				1D3B3E9B280E169E00938516 /* NoticePresenter.swift in Sources */,
 				1D3B3E97280E12FC00938516 /* NoticeProtocols.swift in Sources */,
 				1D3B3E99280E147800938516 /* AppConstants.swift in Sources */,
+				1DD9BF9E280F1CE900CA2F6F /* MovieInteractor.swift in Sources */,
 				1DB2B38E280E0DEE00BBB9F8 /* NoticeViewController.swift in Sources */,
+				1DD9BF9A280F1AE100CA2F6F /* MovieEntity.swift in Sources */,
+				1DD9BFA7280F260F00CA2F6F /* MoviePresenter.swift in Sources */,
 				1DB2B38A280E0DEE00BBB9F8 /* AppDelegate.swift in Sources */,
+				1DD9BFA4280F1F6E00CA2F6F /* MovieCell.swift in Sources */,
 				1D3B3E9F280E1AE900938516 /* NoticeRouter.swift in Sources */,
+				1DD9BFA0280F1E2300CA2F6F /* MovieRouter.swift in Sources */,
 				1DD9BF94280E28A700CA2F6F /* NoticeCell.swift in Sources */,
 				1D3B3E9D280E189000938516 /* NoticeInteractor.swift in Sources */,
-				1D3B3E95280E11BA00938516 /* NoticeModel.swift in Sources */,
+				1D3B3E95280E11BA00938516 /* NoticeEntity.swift in Sources */,
+				1DD9BF9C280F1C5C00CA2F6F /* MovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

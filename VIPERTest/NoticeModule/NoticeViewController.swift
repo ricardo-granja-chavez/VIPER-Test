@@ -66,6 +66,7 @@ extension NoticeViewController:UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presentor?.showMovieController(navigationController: self.navigationController!)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
