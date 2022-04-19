@@ -18,7 +18,7 @@ class MovieRouter: PresenterToRouterMovieProtocol {
         
         let presenter: ViewToPresenterMovieProtocol & InteractorToPresenterMovieProtocol = MoviePresenter()
         let interactor: PresenterToInteractorMovieProtocol = MovieInteractor()
-        let router:PresenterToRouterMovieProtocol = MovieRouter()
+        let router: PresenterToRouterMovieProtocol = MovieRouter()
         
         view.presenter = presenter
         presenter.view = view

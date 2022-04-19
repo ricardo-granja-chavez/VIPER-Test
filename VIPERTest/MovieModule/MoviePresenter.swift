@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MoviePresenter:ViewToPresenterMovieProtocol{
+class MoviePresenter: ViewToPresenterMovieProtocol {
     
     var view: PresenterToViewMovieProtocol?
     var interactor: PresenterToInteractorMovieProtocol?
@@ -19,9 +19,9 @@ class MoviePresenter:ViewToPresenterMovieProtocol{
     
 }
 
-extension MoviePresenter:InteractorToPresenterMovieProtocol{
+extension MoviePresenter: InteractorToPresenterMovieProtocol {
     
-    func movieFetchSuccess(movieList: Array<MovieModel>) {
+    func movieFetchSuccess(movieList: [MovieModel]) {
         view?.onMovieResponseSuccess(movieModelArrayList: movieList)
     }
     

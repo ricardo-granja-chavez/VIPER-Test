@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import Alamofire
-import AlamofireImage
 import SVProgressHUD
 
 class MovieViewController: UIViewController {
@@ -15,7 +13,7 @@ class MovieViewController: UIViewController {
     var presenter: ViewToPresenterMovieProtocol?
     
     @IBOutlet weak var myTableView: UITableView!
-    var arrayList:Array<MovieModel> = Array()
+    var arrayList: [MovieModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +33,6 @@ class MovieViewController: UIViewController {
 extension MovieViewController: PresenterToViewMovieProtocol {
     
     func onMovieResponseSuccess(movieModelArrayList: [MovieModel]) {
-        
         self.arrayList = movieModelArrayList
         self.myTableView.reloadData()
         SVProgressHUD.dismiss()
@@ -43,9 +40,8 @@ extension MovieViewController: PresenterToViewMovieProtocol {
     }
     
     func onMovieResponseFailed(error: String) {
-        
         SVProgressHUD.dismiss()
-        let alert = UIAlertController(title: "Alert", message: "Problem Fetching Movie", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Alert", message: error, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
         self.present(alert, animated: true)
         
