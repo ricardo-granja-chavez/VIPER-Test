@@ -11,9 +11,7 @@ class NoticeInteractor: PresenterToInteractorProtocol {
     var presenter: InteractorToPresenterProtocol?
     
     func fetchNotice() {
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            let jsonString = """
+        let jsonString = """
             [
                 {
                   "id": "1",
@@ -35,8 +33,9 @@ class NoticeInteractor: PresenterToInteractorProtocol {
                 }
               ]
             """
-            let jsonData = Data(jsonString.utf8)
-            
+        let jsonData = Data(jsonString.utf8)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             do {
                 let notices = try JSONDecoder().decode([NoticeModel].self, from: jsonData)
                 self.presenter?.noticeFetchedSuccess(noticeModelArray: notices)
